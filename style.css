@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Consolas", "Monaco", monospace; /* Fonte de código */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Fundo de Linhas de Código */
+#codeBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444; /* Cor discreta para não ofuscar o conteúdo */
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Estilização do Card Central */
+.content {
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px 30px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(83, 130, 161, 0.2);
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #5382a1;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+.subtitle {
+  font-family: sans-serif;
+  color: #5382a1;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  transition: 0.3s;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.link-button:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
